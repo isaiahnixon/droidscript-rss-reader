@@ -14,13 +14,13 @@ These instructions will get you a copy of any part of the project up and running
 
 ### Installing
 
-* From the main page of the application, click on the WiFi Connect button in the toolbar. Follow the instructions to access your local IDE from your browser.
+* From the main page of the application, click on the WiFi Connect button in the toolbar. Follow the instructions to access your local IDE from a browser on a laptop or desktop.
 
 * In the Apps tab, create a new JS application, title it what you will, and copy the code from one of the .js files in this repo into the application.
 
 * Run the application from the browser, which will save the code to your phone and compile it there.
 
-* Customize as you please from there.
+* Customize as you please.
 
 ## Authors
 
