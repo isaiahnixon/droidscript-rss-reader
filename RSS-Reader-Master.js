@@ -4,9 +4,9 @@ var html = "";
 //Called when application is started.
 function OnStart()
 {
-	//Create the major components of the application.
-	lay = app.CreateLayout( "linear", "VCenter,FillXY" );
-	scroll = app.CreateScroller( );
+    //Create the major components of the application.
+    lay = app.CreateLayout( "linear", "VCenter,FillXY" );
+    scroll = app.CreateScroller( );
     webView = app.CreateWebView( 1, 1, "IgnoreErrors,NoScrollBars", true );
     
     //Create the back and forward buttons.
@@ -20,7 +20,7 @@ function OnStart()
     toolbar.AddChild( back );
     toolbar.AddChild( forward );
 	
-	//Create tabs.
+    //Create tabs.
     tabs = app.CreateTabs( "RSS Select,Feed", 1, 1, "VCenter" );
     tabs.SetOnChange( tabs_OnChange );
     lay.AddChild( tabs );
@@ -30,13 +30,13 @@ function OnStart()
     layFeed = tabs.GetLayout( "Feed" );
     
     //Create an text edit box for url entry. 
-	edt = app.CreateTextEdit( "https://news.google.com/news/rss", 0.8 );
-	edt.SetMargins( 0, 0.05, 0, 0 );
-	layRSS.AddChild( edt );
+    edt = app.CreateTextEdit( "https://news.google.com/news/rss", 0.8 );
+    edt.SetMargins( 0, 0.05, 0, 0 );
+    layRSS.AddChild( edt );
     
     //Create a button to send request.
-	read = app.CreateButton( "Read RSS Feed", 0.3, 0.1 ); 
-	read.SetMargins( 0, 0.025, 0, 0.025 );
+    read = app.CreateButton( "Read RSS Feed", 0.3, 0.1 ); 
+    read.SetMargins( 0, 0.025, 0, 0.025 );
     read.SetOnTouch( read_OnTouch );
     layRSS.AddChild( read );
     
@@ -49,8 +49,8 @@ function OnStart()
     layFeed.AddChild( scroll );
     
 	
-	//Add layout to app.	
-	app.AddLayout( lay );
+    //Add layout to app.	
+    app.AddLayout( lay );
 }
 
 //Handle tab selection.
@@ -103,12 +103,19 @@ function process(data)
     {
         if(data.status === 200)
         {
+            //Reset the webView.
+            webView.ClearHistory();
+            webView.Hide();
+            
+            //Reset the html variable.
+            html = "";
+            
             //Gather the XML objects and information about the RSS.
             var rssInfo = data.responseXML.getElementsByTagName("rss");
             var feedInfo = data.responseXML.getElementsByTagName("feed");
             var xmlObjects = data.responseXML;
             
-            //Test to make sure this is indeed RSS and that it is version 2.
+            //Test if the RSS is version 2.
             if(rssInfo.length > 0 && rssInfo.item(0) !== 'undefined' && rssInfo.item(0).getAttribute("version") === "2.0")
             {
                 
@@ -146,6 +153,7 @@ function process(data)
                 webView.Show();
                 app.HideProgress();
             }
+			//Test if the RSS is Atom.
             else if(feedInfo.length > 0 && feedInfo.item(0) !== 'undefined' && feedInfo.item(0).getAttribute("xmlns") === "http://www.w3.org/2005/Atom")
             {
                 //Gather the XML objects.
