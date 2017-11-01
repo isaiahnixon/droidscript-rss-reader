@@ -115,7 +115,7 @@ function process(data)
         {
             //Tell the user that the RSS was not version 2.0.
             webView.LoadHtml("<h2>RSS version incompatible.</h2>"
-                + "<p>Please input a RSS Version 2.0 feed.</p>");
+                + "<p>Please input a RSS Atom feed.</p>");
             webView.SetSize( 1, 0.6 );
             webView.Show();
             app.HideProgress();
