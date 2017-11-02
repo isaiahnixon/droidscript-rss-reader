@@ -26,6 +26,10 @@ These instructions will get you a copy of any part of the project up and running
 
 In order to deploy a DroidScript application outside of your local IDE you will need access to the <a href="https://play.google.com/store/apps/details?id=org.droidscript.droidscriptapkbuilder">APKBuilder plugin</a>. Which can be downloaded directly in the Google Play Store or from the DroidScript application. However, use of this plugin does require either a Premium DroidScript subscription or a paid license.
 
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on the code of conduct, and the process for submitting pull requests.
+
 ## Authors
 
 * **Isaiah Nixon** - *Initial work*
