@@ -2,11 +2,11 @@
 
 This project is done in <a href="http://droidscript.org/">DroidScript</a> which is a really neat JavaScript IDE that I have been dabbling in lately. It is run directly on an Android device but can be connected through WiFi to a browser on any computer, and the scripting can be done there.
 
-These are simple RSS readers that pull data from a user-entered URL through XML HTTP requests. The XML then gets processed into HTML and displayed through a WebView.
+This is a simple RSS reader that pulls data from a user-entered URL through XML HTTP requests. The XML then gets processed into HTML and displayed through a WebView.
 
 ## Getting Started
 
-These instructions will get you a copy of any part of the project up and running.
+These instructions will get you a copy of the project up and running.
 
 ### Prerequisites
 
@@ -16,7 +16,7 @@ These instructions will get you a copy of any part of the project up and running
 
 * From the main page of the application, click on the WiFi Connect button in the toolbar. Follow the instructions to access your local IDE from a browser on a laptop or desktop.
 
-* In the Apps tab, create a new JS application, title it what you will, and copy the code from one of the .js files in this repo into the application.
+* In the Apps tab, create a new JS application, title it what you will, and copy the code from [RSS-Reader.js](RSS-Reader.js) file in this repository into the application.
 
 * Run the application from the browser, which will save the code to your phone and compile it there.
 
