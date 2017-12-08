@@ -1,4 +1,4 @@
-# DroidScript RSS Readers
+# DroidScript RSS Reader
 
 This project is done in <a href="http://droidscript.org/">DroidScript</a> which is a really neat JavaScript IDE that I have been dabbling in lately. It is run directly on an Android device but can be connected through WiFi to a browser on any computer, and the scripting can be done there.
 
