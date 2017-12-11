@@ -24,8 +24,6 @@ On your phone you should see:
 
 ![Example Output](https://raw.githubusercontent.com/isaiahnixon/droidscript-rss-reader/master/example-output.gif)
 
-* Customize as you please.
-
 ## Deployment
 
 In order to deploy a DroidScript application outside of your local IDE you will need access to the <a href="https://play.google.com/store/apps/details?id=org.droidscript.droidscriptapkbuilder">APKBuilder plugin</a>. Which can be downloaded directly in the Google Play Store or from the DroidScript application. However, use of this plugin does require either a Premium DroidScript subscription or a paid license.
