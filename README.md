@@ -20,6 +20,10 @@ These instructions will get you a copy of the project up and running.
 
 * Run the application from the browser, which will save the code to your phone and compile it there.
 
+On your phone you should see:
+
+![Example Output](https://raw.githubusercontent.com/isaiahnixon/droidscript-rss-reader/master/example-output.gif)
+
 * Customize as you please.
 
 ## Deployment
